@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Nunito:wght@200;600;700&family=Open+Sans:wght@300;400;500&family=Port+Lligat+Slab&display=swap');
+
+$green: #20741d;
+$green_font: #4d792e;
+$green1: #41BE3D;
+$white: #fff;
+$form_bg: #fff9f5;
+$p_clr: #202020;
+
+@font-face {
+    src: url("/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf");
+    font-family: Cormorant-600;
+}
+
+@font-face {
+    src: url("/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf");
+    font-family: Cormorant-700;
+}
+
+@font-face {
+    src: url("/fonts/Futura/futura-pt-light.ttf");
+    font-family: FuturaPT-400;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: $white;
+    color: #202020;
+}
+
+.font-cormorant-700 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+.font-cormorant-600 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+.font-cormorant-400 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+}
+
+.font-nunito {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+}
+
+.font-nunito-600 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.font-nunito-700 {
+    font-family: 'Nunito' sans-serif;
+    font-weight: 700;
+}
+
+main {
+
+    .greeting {
+        background-image: url('../img/fon44.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center 0;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 740px;
+
+        .desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            // min-height: 200px;
+            text-align: center;
+
+            .welcome {
+                text-transform: uppercase;
+                font-size: 29px;
+                color: $green_font;
+            }
+
+            .greeting-p {
+                font-size: 18px;
+                margin-top: 14px;
+                margin-bottom: 30px;
+                line-height: 31px;
+                color: $p_clr;
+            }
+        }
+    }
+
+    .invite-cntnr {
+        background-image: url('../img/fon-2.jpg');
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 1600px;
+        max-width: 450px;
+        margin: 0 auto;
+
+        .invite {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 1500px;
+            padding-top: 14rem;
+            text-align: center;
+
+            .ttl-cntnr {
+                margin-bottom: 2rem;
+
+                .ttl {
+                    font-size: 36px;
+                }
+            }
+
+            .hosts {
+                .ttl {
+                    font-size: 22px;
+                    font-weight: 200;
+                }
+
+                .host1,
+                .host2 {
+                    font-size: 20px;
+                    margin-bottom: .5rem;
+                }
+            }
+
+            .wedding-date-cntnr {
+                .date-ttl {
+                    margin-bottom: .6rem;
+
+                    .ttl {
+                        font-size: 22px;
+                    }
+                }
+
+                .date-cntnr {
+                    margin-bottom: 3rem;
+
+                    .date {
+                        font-size: 22px;
+                    }
+                }
+
+                .date-timer {
+                    .ttl {
+                        font-size: 18px;
+                        font-weight: 200;
+                        margin-bottom: 3rem;
+                    }
+
+                    .clocks {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .clock-cntnr {
+                            margin-right: .7rem;
+                            width: 66px;
+                            height: 66px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            border: 2px solid $green;
+                            border-radius: 50%;
+
+                            .num,
+                            .clock {
+                                line-height: 1;
+                                color: rgb(32, 32, 32);
+                            }
+
+                            .num {
+                                font-size: 14px;
+                                font-family: 'Open Sans', sans-serif;
+                            }
+
+                            .clock {
+                                font-size: 12px;
+                                font-family: 'Port Lligat Slab', serif;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .address-cntnr {
+                text-align: center;
+
+                .ttl-cntnr {
+                    margin-bottom: 1rem;
+
+                    .ttl {
+                        font-size: 24px;
+                    }
+                }
+
+                .address {
+                    margin-bottom: 3rem;
+
+                    .address-p {
+                        font-size: 17px;
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .map-cntnr {
+                    margin-bottom: 3rem;
+                    border: 2px solid #30982C;
+
+                    .map {
+                        width: 332px;
+                        height: 203px;
+                    }
+                }
+
+                .gps-button {
+                    .gps-btn {
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 18px;
+                        text-align: center;
+                        background: linear-gradient(117.06deg, #20741D 23.73%, #41BE3D 45.38%, #20741D 52.48%, #2AAF25 80.6%);
+                        border-radius: 10px;
+                        padding: 15px;
+                        border-bottom: 4px solid $green1;
+                        box-shadow: 1px 3px 10px $green1;
+                    }
+                }
+            }
+
+            .hr {
+                width: 70%;
+                height: 1px;
+                background-color: #EDEDED;
+                margin: 30px 0;
+            }
+        }
+    }
+
+    .album {
+        max-width: 450px;
+    }
+
+    .attend {
+        max-width: 450px;
+    }
+
+    .cmnts-cntnr {
+        max-width: 450px;
+    }
+}
+
+.sub-page {
+    main {
+        .roof-img {
+            background-image: url('..//img/tfon-1.jpg');
+            background-size: 100%;
+            background-position: center 0;
+            background-repeat: no-repeat;
+        }
+    }
+}

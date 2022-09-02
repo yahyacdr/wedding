@@ -1,0 +1,1 @@
+let cmnts_cntnr = document.querySelector('.cmnt-cntnr')
